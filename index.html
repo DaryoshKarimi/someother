@@ -1,0 +1,119 @@
+<doctype !html>
+  <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <title>S.O</title>
+<style>
+
+body { 
+margin: auto; 
+}
+
+.navcontainer {
+  width: 100%;
+  line-height: 43px;
+  position: fixed;
+}
+
+.nav {
+  font-family: Arial Narrow;
+  font-size: 45px;
+  text-decoration: none;
+  color: black;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav:hover {
+  color: yellow;
+}
+
+.copy {
+  font-family: arial;
+  font-size: 8pt;
+}
+
+.orange:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  cursor: url('images/cursor.cur'), auto;
+}
+
+.orange {
+  width: 7.9%;
+  }
+
+.copycont {
+  padding: 5px 10px;
+}
+
+ .images {
+  width: 80%;
+  padding: 15px 10px;
+}
+
+
+
+.fling-minislide {
+  width: 70%; 
+  position: relative;
+  padding: 10px 10px;
+}
+
+.fling-minislide img{ position:absolute; animation:fling-minislide 3s infinite; opacity:100; width: 100%; height: auto;}
+
+@keyframes fling-minislide {0{opacity:0;} 0{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:0s;}
+.fling-minislide img:nth-child(2){animation-delay:0s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 534px) { 
+
+  
+  .orange {
+    width: 22%;
+}
+
+  .copy {
+    font-size: 15pt;
+ }
+
+
+@font-face { font-family: Arial Narrow; src: url('fonts/Arial Narrow.ttf'); } 
+ 
+</style>
+
+
+
+  </head>
+  <body>
+
+
+
+<div class='copycont'><img class='orange' src="images/logoforweb.png"><br>
+<a class='copy'>For new projects, questions or anything you need to get off your chest, please click </a><a class='copy' href="mailto:click@click.com">here</a>.</div>
+
+
+<div class="fling-minislide">
+  <img src="images/3.jpg" alt="Slide 4" />
+  <img src="images/1.jpg" alt="Slide 3" />
+  <img src="images/2.png" alt="Slide 2" />
+
+</div>
