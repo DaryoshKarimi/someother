@@ -1,7 +1,7 @@
 <doctype !html>
   <head>
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
-    <title>S.O</title>
+    <title>S.O.S</title>
 <style>
 
 body { 
@@ -33,6 +33,19 @@ margin: auto;
 .copy {
   font-family: arial;
   font-size: 8pt;
+  color: black;
+  text-decoration: none;
+}
+
+.copylink {
+  font-family: arial;
+  font-size: 8pt;
+  color: black;
+  text-decoration: none;
+}
+
+.copylink:hover {
+  opacity: 0;
 }
 
 .orange:hover {
@@ -56,44 +69,27 @@ margin: auto;
 
 
 
-.fling-minislide {
-  width: 70%; 
-  position: relative;
-  padding: 10px 10px;
-}
-
-.fling-minislide img{ position:absolute; animation:fling-minislide 3s infinite; opacity:100; width: 100%; height: auto;}
-
-@keyframes fling-minislide {0{opacity:0;} 0{opacity:0;}}
-.fling-minislide img:nth-child(4){animation-delay:0s;}
-.fling-minislide img:nth-child(3){animation-delay:0s;}
-.fling-minislide img:nth-child(2){animation-delay:0s;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 534px) { 
 
   
   .orange {
-    width: 22%;
+    width: 29%;
 }
 
   .copy {
-    font-size: 15pt;
+    font-size: 14pt;
  }
+
+.copylink {
+    font-size: 14pt;
+ }
+
+.images {
+  width: 94%;
+}
+}
 
 
 @font-face { font-family: Arial Narrow; src: url('fonts/Arial Narrow.ttf'); } 
@@ -108,12 +104,10 @@ margin: auto;
 
 
 <div class='copycont'><img class='orange' src="images/logoforweb.png"><br>
-<a class='copy'>For new projects, questions or anything you need to get off your chest, please click </a><a class='copy' href="mailto:click@click.com">here</a>.</div>
+<a class='copy'>For new projects, inquiries and/or telling us about your new favourite colour, please click </a><a class='copylink' href="mailto:click@click.com">here</a>.</div>
 
 
-<div class="fling-minislide">
-  <img src="images/3.jpg" alt="Slide 4" />
-  <img src="images/1.jpg" alt="Slide 3" />
-  <img src="images/2.png" alt="Slide 2" />
+<img class='images' src="images/1.jpg">
 
-</div>
+
+<div class='copycont'><a class='copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla sed urna feugiat placerat et eget ante. Maecenas lectus sapien, porta eu consectetur vitae, tempus a lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</a></div>
