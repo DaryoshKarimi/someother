@@ -8,40 +8,28 @@ body {
 margin: auto; 
 }
 
-.navcontainer {
-  width: 100%;
-  line-height: 43px;
-  position: fixed;
-}
-
-.nav {
-  font-family: Arial Narrow;
-  font-size: 45px;
-  text-decoration: none;
-  color: black;
-  padding-left: 25px;
-  padding-right: 15px;
-  padding-top: 15px;
-  text-transform: uppercase;
-  display: inline-block;
-}
-
-.nav:hover {
-  color: yellow;
-}
-
 .copy {
-  font-family: arial;
-  font-size: 8pt;
+  font-family: arial narrow;
+  font-size: 12pt;
   color: black;
   text-decoration: none;
+  line-height: 25px;
+}
+
+.secondcopy {
+  font-family: arial narrow;
+  font-size: 12pt;
+  color: black;
+  text-decoration: none;
+  line-height: 20px;
 }
 
 .copylink {
-  font-family: arial;
-  font-size: 8pt;
+  font-family: arial narrow;
+  font-size: 12pt;
   color: black;
   text-decoration: none;
+  line-height: 20px;
 }
 
 .copylink:hover {
@@ -55,40 +43,53 @@ margin: auto;
 }
 
 .orange {
-  width: 7.9%;
+  width: 8.2%;
   }
 
 .copycont {
-  padding: 5px 10px;
+  padding: 15px 10px;
+  width: 80%;
 }
 
  .images {
-  width: 80%;
-  padding: 15px 10px;
+  width: 100%;
+  padding: 0px 10px;
 }
 
 
-
+.imgcont {
+  width: 80%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
 
 
 @media (max-width: 534px) { 
 
   
   .orange {
-    width: 29%;
+    width: 31%;
+    padding-bottom: 5px;
 }
 
   .copy {
-    font-size: 14pt;
+    font-size: 16pt;
+    line-height: 24px;
  }
 
 .copylink {
-    font-size: 14pt;
+    font-size: 16pt;
+    line-height: 24px;
  }
 
-.images {
-  width: 94%;
-}
+.secondcopy {
+    font-size: 16pt;
+    line-height: 24px;
+
+ }
+
+
 }
 
 
@@ -104,10 +105,10 @@ margin: auto;
 
 
 <div class='copycont'><img class='orange' src="images/logoforweb.png"><br>
-<a class='copy'>For new projects, inquiries and/or telling us about your new favourite colour, please click </a><a class='copylink' href="mailto:click@click.com">here</a>.</div>
+<a class='copy'>For new projects, inquiries and/or telling us about your new favourite colour, you can click </a><a class='copylink' href="mailto:click@click.com">here</a>.</div>
 
 
-<img class='images' src="images/1.jpg">
+<div class='imgcont'><img class='images' src="images/4.png"></div>
 
 
-<div class='copycont'><a class='copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla sed urna feugiat placerat et eget ante. Maecenas lectus sapien, porta eu consectetur vitae, tempus a lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</a></div>
+<div class='copycont'><a class='secondcopy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla sed urna feugiat placerat et eget ante. Maecenas lectus sapien, porta eu consectetur vitae, tempus a lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra. Per inceptos himenaeos © 2021.</a></div>
