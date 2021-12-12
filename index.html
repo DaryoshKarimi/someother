@@ -7,8 +7,11 @@
 
 body { 
   margin: 0px 10px;
+  max-width: 1000px;
 
 }
+
+
  
 
 .copy {
@@ -31,21 +34,31 @@ body {
   font-family: arial narrow;
   font-size: 12pt;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: red;
+  transition: text-decoration-color 500ms;
 }
 
 .copylink:hover {
-  opacity: 0;
+  color: rgba(0,0,0,0);
+  text-decoration-color: black;
 }
 
 .orange:hover {
   -webkit-filter: blur(1px);
+  transition: filter 100ms;
   filter: blur(1px);
   cursor: url('images/cursor.cur'), auto;
 }
 
 .orange {
-  width: 9.5%;
+  width: 120px;
+  padding-bottom: 3px;
+  display: none;
+}
+
+.orange-small {
+  width: 80px;
   padding-bottom: 3px;
 }
 
@@ -79,9 +92,7 @@ body {
 @media (max-width: 921px) { 
 
   
-  .orange {
-    width: 13%;
-}
+
 
   .copy {
     font-size: 13pt;
@@ -114,16 +125,19 @@ body {
 
 @media (max-width: 534px) { 
 
-  
-  .orange {
-    width: 29.5%;
-    padding-bottom: 5px;
-}
 
   .copy {
     font-size: 16pt;
     line-height: 24px;
  }
+
+  .orange {
+    display: block;
+}
+
+  .orange-small {
+    display: none;
+}
 
 .copylink {
     font-size: 16pt;
@@ -157,7 +171,7 @@ body {
 
 
 
-<div class='copycont'><img class='orange' src="images/logoforweb.png"><br>
+<div class='copycont'><img class='orange' src="images/logoforweb.png"><img class='orange-small' src="images/logoforweb-smaller.png"><br>
 <a class='copy'>For new projects, inquiries and/or telling us about your new favourite colour, you can click </a><a class='copylink' href="mailto:click@click.com">here</a>.</div>
 
     <script src='slider.js'></script>
