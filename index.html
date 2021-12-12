@@ -1,12 +1,15 @@
-<doctype !html>
+<!doctype html>
   <head>
+    <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'/>
     <title>S.O.S</title>
 <style>
 
 body { 
-margin: auto; 
+  margin: 0px 10px;
+
 }
+ 
 
 .copy {
   font-family: arial narrow;
@@ -47,23 +50,29 @@ margin: auto;
 }
 
 .copycont {
-  padding: 15px 10px;
+  padding: 15px 0px;
   width: 75%;
   line-height: 20px;
 
 }
 
- .images {
+ .image {
   width: 100%;
-  padding: 0px 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background-size: cover;
+  background-position: center;
 }
 
 
-.imgcont {
+.image_cont { 
   width: 80%;
   position: relative;
   display: block;
-  overflow: hidden;
+  padding-top: 56.25%;
 }
 
 
@@ -98,12 +107,6 @@ margin: auto;
     width: 85%;
 }
 
-.imgcont {
-    width: 99%;
-
-}
-
-
 }
 
 
@@ -134,15 +137,12 @@ margin: auto;
  }
 
 .copycont {
-    width: 96%;
+    width: calc(100% - 20px);
 }
 
-.imgcont {
-    width: 98%;
-
+.image_cont {
+    width: 100%;
 }
-
-
 }
 
 
@@ -160,8 +160,7 @@ margin: auto;
 <div class='copycont'><img class='orange' src="images/logoforweb.png"><br>
 <a class='copy'>For new projects, inquiries and/or telling us about your new favourite colour, you can click </a><a class='copylink' href="mailto:click@click.com">here</a>.</div>
 
-
-<div class='imgcont'><img class='images' src="images/4.png"></div>
+    <script src='slider.js'></script>
 
 
 <div class='copycont'><a class='secondcopy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et nulla sed urna feugiat placerat et eget ante. Maecenas lectus sapien, porta eu consectetur vitae, tempus a lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra. Per inceptos himenaeos © 2021.</a></div>
