@@ -48,6 +48,6 @@ window.setInterval(
     previous_image = list_of_els[i];
     i = (i + 1) % list_of_els.length;
   },
-  500
+  200
 );
 
