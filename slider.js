@@ -28,6 +28,9 @@ for (let i=0; i<list_of_images.length; i++) {
 }
 
 
+let is_image_cont_clicked = false;
+image_cont.addEventListener('pointerdown', function () {is_image_cont_clicked = true});
+window.addEventListener('pointerup', function () {is_image_cont_clicked = false});
 
 
 
@@ -40,6 +43,8 @@ let previous_image = null;
 
 window.setInterval(
   function () {
+    if (is_image_cont_clicked) return;
+
     list_of_els[i].style.display = 'block';
     if (previous_image != null) {
       previous_image.style.display = 'none';

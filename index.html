@@ -33,16 +33,24 @@ body {
   font-size: 18px;
   color: black;
   text-decoration: underline;
-  text-decoration-color: red;
-  transition: text-decoration-color 500ms;
+  text-decoration-color: black;
+  transition: text-decoration-color 200ms;
+  transition: color 200ms;
 }
 
 .copylink:hover {
   color: rgba(0,0,0,0);
-  text-decoration-color: black;
+  text-decoration-color: white;
 }
 
 .orange:hover {
+  -webkit-filter: blur(1px);
+  transition: filter 100ms;
+  filter: blur(1px);
+  cursor: url('images/cursor.cur'), auto;
+}
+
+.orange-small:hover {
   -webkit-filter: blur(1px);
   transition: filter 100ms;
   filter: blur(1px);
@@ -60,7 +68,7 @@ body {
 
 .copycont {
   padding: 15px 0px;
-  width: 75%;
+  width: 80%;
   line-height: 20px;
 
 }
@@ -109,10 +117,6 @@ body {
     line-height: 24px;
 
  }
-
-.copycont {
-    width: 85%;
-}
 
 }
 
