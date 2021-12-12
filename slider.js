@@ -3,6 +3,8 @@ const list_of_images = [
   'images/3.jpg',
   'images/1.jpg',
   'images/2.png',
+  'images/TSOL1.png',
+  'images/TSOL2.jpg',
 ]
 
 
