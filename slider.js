@@ -8,7 +8,7 @@ const list_of_images = [
   'images/Jayrunner.png',
   'images/wxnwff.jpg',
   'images/NYE.jpg',
-  'images/LPM.png',
+  'images/LPM.jpg',
   'images/thumbsup.png',
 ]
 
