@@ -10,6 +10,11 @@ const list_of_images = [
   'images/NYE.jpg',
   'images/LPM.jpg',
   'images/thumbsup.png',
+  'images/onionorange.png',
+  'images/LPM.mov',
+  'images/gdntr.mov',
+  'images/Playdate.gif',
+  'images/yesterday.png',
 ]
 
 
